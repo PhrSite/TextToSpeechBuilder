@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TextToSpeechBuilderSetup", "TextToSpeechBuilderSetup.vdproj", "{7361AD2B-84AB-077F-80A8-FEA03CF34E35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7361AD2B-84AB-077F-80A8-FEA03CF34E35}.Debug|Default.ActiveCfg = Debug
+		{7361AD2B-84AB-077F-80A8-FEA03CF34E35}.Debug|Default.Build.0 = Debug
+		{7361AD2B-84AB-077F-80A8-FEA03CF34E35}.Release|Default.ActiveCfg = Release
+		{7361AD2B-84AB-077F-80A8-FEA03CF34E35}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {656A502F-A01D-49B1-B449-7FB83B475A8F}
+	EndGlobalSection
+EndGlobal
