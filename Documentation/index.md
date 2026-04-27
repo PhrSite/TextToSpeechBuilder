@@ -2,6 +2,34 @@
 _layout: landing
 ---
 
-# The Test to Speech Application
-This project is a Visual Studio Windows Forms application that targets .NET 10. It may be run on Windows 10 or later.
+# The TextToSpeechBuilder Application
+The TextToSpeechBuilder application allows the user to build a Windows WAVE (*.wav) file from a string of text. The WAVE files created by this application can be used in VoIP applications for playing prerecorded audio to a call party.
 
+This application creates WAVE files with the following characteristics.
+- Sample Format: 16-bit linear PCM
+- Sample Rate: 8000 or 16000 samples/second
+- Number of Channels: 1 
+
+To create a WAVE file from text, fill in the settings described below and then click on the Create button.
+
+# Settings
+
+## Prepend Silence
+The Prepend Silence setting specifies the number of milliseconds of silence to generate before the beginning of voice audio.
+
+## Text
+This setting specifies the text to generate the voice audio for. It may contain multiple sentences and there is no limit on its length.
+
+## Append Silence
+The Append Silence setting specifies the number of milliseconds to append to the end of the voice audio that is generated.
+
+## Sample Rate
+Specifies the sample rate. The choices are 8000 or 16000 samples/second.
+
+In general, 8000 samples/second is adequate for most VoIP applications. If "high definition" audio is required and the application is using a wideband codec such as AMR-WB then 16000 samples/second is the better choice.
+
+## Voice
+Specifies the voice to use. The choices are "Female" and "Male".
+
+## File
+Specifies the destination of the WAVE file. The user can use the Browse button to select a folder and a file name to write the audio samples to.

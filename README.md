@@ -1,10 +1,10 @@
 # Introduction
 This project is a Visual Studio Windows Forms application that targets .NET 10. It may be run on Windows 10 or later.
 
-The TextToSpeechBuilder application allows the user to build a Windows WAVE (*.wav) file from a string of text. The WAVE files created by this application can be used in VoIP applications for playing prerecorded audio to a caller.
+The TextToSpeechBuilder application allows the user to build a Windows WAVE (*.wav) file from a string of text. The WAVE files created by this application can be used in VoIP applications for playing prerecorded audio to a call party.
 
 ## Installation
-You can download the self-extracting EXE file for installing the TextToSpeechBuilder application here.
+You can download the self-extracting EXE file for installing the TextToSpeechBuilder application [here](https://1drv.ms/u/c/4f6607f8bc331ae0/IQBngZMvRRqmQpmqSdxtvpA0AZKkPIK6KtD2zunNBiBSpFQ?e=n0KwcX).
 
 **Note**: The self-extracting EXE installation file has not been digitally signed with a valid code signing certificate.
 

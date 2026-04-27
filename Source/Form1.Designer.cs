@@ -45,6 +45,7 @@
             SampleRateCombo = new ComboBox();
             label8 = new Label();
             VoiceCombo = new ComboBox();
+            HelpBtn = new Button();
             SuspendLayout();
             // 
             // label1
@@ -203,12 +204,24 @@
             VoiceCombo.Size = new Size(125, 39);
             VoiceCombo.TabIndex = 5;
             // 
+            // HelpBtn
+            // 
+            HelpBtn.AutoSize = true;
+            HelpBtn.Location = new Point(372, 564);
+            HelpBtn.Name = "HelpBtn";
+            HelpBtn.Size = new Size(105, 41);
+            HelpBtn.TabIndex = 16;
+            HelpBtn.Text = "Help";
+            HelpBtn.UseVisualStyleBackColor = true;
+            HelpBtn.Click += HelpBtn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(750, 617);
+            Controls.Add(HelpBtn);
             Controls.Add(VoiceCombo);
             Controls.Add(label8);
             Controls.Add(SampleRateCombo);
@@ -256,5 +269,6 @@
         private ComboBox SampleRateCombo;
         private Label label8;
         private ComboBox VoiceCombo;
+        private Button HelpBtn;
     }
 }

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>The Test to Speech Application | TextToSpeechBuilder Documentation </title>
+      <title>The TextToSpeechBuilder Application | TextToSpeechBuilder Documentation </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="The Test to Speech Application | TextToSpeechBuilder Documentation ">
+      <meta name="title" content="The TextToSpeechBuilder Application | TextToSpeechBuilder Documentation ">
     
     
       <link rel="shortcut icon" href="favicon.ico">
@@ -70,9 +70,30 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="the-test-to-speech-application">The Test to Speech Application</h1>
+<h1 id="the-texttospeechbuilder-application">The TextToSpeechBuilder Application</h1>
 
-<p>This project is a Visual Studio Windows Forms application that targets .NET 10. It may be run on Windows 10 or later.</p>
+<p>The TextToSpeechBuilder application allows the user to build a Windows WAVE (*.wav) file from a string of text. The WAVE files created by this application can be used in VoIP applications for playing prerecorded audio to a call party.</p>
+<p>This application creates WAVE files with the following characteristics.</p>
+<ul>
+<li>Sample Format: 16-bit linear PCM</li>
+<li>Sample Rate: 8000 or 16000 samples/second</li>
+<li>Number of Channels: 1</li>
+</ul>
+<p>To create a WAVE file from text, fill in the settings described below and then click on the Create button.</p>
+<h1 id="settings">Settings</h1>
+<h2 id="prepend-silence">Prepend Silence</h2>
+<p>The Prepend Silence setting specifies the number of milliseconds of silence to generate before the beginning of voice audio.</p>
+<h2 id="text">Text</h2>
+<p>This setting specifies the text to generate the voice audio for. It may contain multiple sentences and there is no limit on its length.</p>
+<h2 id="append-silence">Append Silence</h2>
+<p>The Append Silence setting specifies the number of milliseconds to append to the end of the voice audio that is generated.</p>
+<h2 id="sample-rate">Sample Rate</h2>
+<p>Specifies the sample rate. The choices are 8000 or 16000 samples/second.</p>
+<p>In general, 8000 samples/second is adequate for most VoIP applications. If &quot;high definition&quot; audio is required and the application is using a wideband codec such as AMR-WB then 16000 samples/second is the better choice.</p>
+<h2 id="voice">Voice</h2>
+<p>Specifies the voice to use. The choices are &quot;Female&quot; and &quot;Male&quot;.</p>
+<h2 id="file">File</h2>
+<p>Specifies the destination of the WAVE file. The user can use the Browse button to select a folder and a file name to write the audio samples to.</p>
 
 </article>
           </div>
@@ -81,6 +102,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/PhrSite/TextToSpeechBuilder/blob/master/Documentation/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

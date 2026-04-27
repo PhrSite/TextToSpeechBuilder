@@ -4,6 +4,7 @@
 
 namespace TextToSpeechBuilder;
 
+using System.Diagnostics;
 using System.Speech.AudioFormat;
 using System.Speech.Synthesis;
 
@@ -58,7 +59,7 @@ public partial class Form1 : Form
             MessageBox.Show("The Append Silence setting must be an integer greater than or equal to 0 and less than " +
                 $"{int.MaxValue}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             AppendSilenceMilliSecondsTb.Focus();
-            return false; 
+            return false;
         }
 
         if (string.IsNullOrEmpty(SpeechTextTb.Text) == true)
@@ -72,7 +73,7 @@ public partial class Form1 : Form
 
         if (string.IsNullOrEmpty(FileTb.Text) == true)
         {
-            MessageBox.Show("A *.wav file name must be specified", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)    ;
+            MessageBox.Show("A *.wav file name must be specified", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return false;
         }
 
@@ -96,7 +97,7 @@ public partial class Form1 : Form
                 break;
             case 1:
                 m_VoiceGender = VoiceGender.Male;
-                    break;
+                break;
             default:
                 m_VoiceGender = VoiceGender.Female;
                 break;
@@ -135,7 +136,7 @@ public partial class Form1 : Form
             // Speak the prompt into the file.
             synth.Speak(builder);
 
-            MessageBox.Show("Speech file successfully created", "Success", MessageBoxButtons.OK, 
+            MessageBox.Show("Speech file successfully created", "Success", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
         catch (Exception ex)
@@ -153,4 +154,13 @@ public partial class Form1 : Form
         Close();
     }
 
+    private void HelpBtn_Click(object sender, EventArgs e)
+    {
+        ProcessStartInfo psi = new ProcessStartInfo("https://phrsite.github.io/TextToSpeechBuilder")
+        {
+            UseShellExecute = true
+        };
+
+        Process.Start(psi);
+    }
 }
